@@ -208,8 +208,8 @@ header span{
 
 /*Media queries*/
 
-/* iPhone ---------------*/
-@media screen and (max-width: 480px){
+/* OLD iPhone ---------------*/
+@media screen and (max-width: 667px){
 	.grid_1,
 	.grid_2,
 	.grid_3,
