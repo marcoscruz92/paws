@@ -5,8 +5,14 @@ html{
 }
 body{
 	margin: 0 0 100px; /* bottom = footer height */
-
+	font-family: 'Lato', sans-serif;
 }
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
 /* Sticky footer css ends here*/
 
 /* Class to position a navbar into a fix position using 
@@ -38,7 +44,13 @@ nav{
 nav ul li{
 	display: inline-block;
 	margin-left: 3.03%;
+	color: #95a5a6;
 }
+
+nav ul li a:hover{
+	border-bottom: 2px solid #7f8c8d;
+}
+
 /* ***Header and nav IDs ends here ***** */
 
 #banner {
@@ -58,6 +70,10 @@ header{
 header h1{
 	background-color: rgba(0,0,0,.4);
 	color: white;
+	font-size: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	word-spacing: 0.3em;
 }
 
 header span{
@@ -69,14 +85,29 @@ header span{
 
 .button-transparent{
 	color: white;
-	border: 1px solid white;
+/*	border: 1px solid white;
+*/	border-radius: 5%;
+	background-color: #95a5a6;
+	box-shadow: 0 5px #7f8c8d;
+}
+
+.button-blue {
+	background-color: #3498db;
+	border: 1px solid #3498db;
 	border-radius: 5%;
+	box-shadow: 0 5px 0 #006599;
+}
+
+.button-transparent:hover, .button-solid:hover{
+	  transform: translateY(-10%);
 }
 .button-solid {
 	color: white;
 	background-color: #e74c3c;
 	border: 1px solid #e74c3c;
 	border-radius: 5%;
+	box-shadow: 0 5px 0 #c0392b;
+	margin-left: 0.5%;
 }
 
 #descriptions{
@@ -106,6 +137,15 @@ header span{
 	text-align: center;
 	background-color: #2c3e50;
 }
+#stats p {
+	-webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition-property: all .2s ease-in;
+    transition-property: all .2s ease-in;
+}
+#stats p:hover{
+	font-size: 3em;
+}
 
 #stats p, #volunteer p {
 	position: relative;
@@ -130,21 +170,31 @@ header span{
 #volunteer p:first-child {
 	background-color: rgba(0,0,0,.4);
 	color: white;
+	font-size: 4.5em;
+	position: relative;
+	top: 25%;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	word-spacing: 0.2em;
 }
 
-
-
-#volunteer p span {
-/*	display: inline-block;
-*/	
+#volunteer span {
 	padding: 1%;
-
+	display: inline-block;
+	height: 20px;
+	width: 100px;
+	margin-top: 5%;
 }
 
-#volunteer p span:first-child{
+#volunteer span:hover {
+	-webkit-transform: translateY(-10%);
+}
+
+/*#volunteer span:first-child{
 	background-color: #3498db;
 	border: 1px solid #3498db;
-}
+	box-shadow: 0 5px 0 #006599;
+}*/
 
 #recents {
 	height: 150px;
