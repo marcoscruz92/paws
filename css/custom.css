@@ -290,6 +290,7 @@ header span{
 	#header nav{
 		display: inline-block;
 		width: 46%;
+		font-size: 0.8em;
 	}
 
 	#banner {
