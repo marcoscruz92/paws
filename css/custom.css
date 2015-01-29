@@ -4,7 +4,7 @@ html{
 	min-height: 100%;
 }
 body{
-	margin: 0 0 100px; /* bottom = footer height */
+	margin: 0 0 120px; /* bottom = footer height */
 	font-family: 'Lato', sans-serif;
 }
 a {
@@ -124,6 +124,13 @@ header span{
 	text-align: center;
 	/*margin-top: 1.5em;*/
 	margin-top: 2.5%;
+	-webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition-property: all .2s ease-in;
+    transition-property: all .2s ease-in;
+}
+.description:hover{
+	margin-top: -0.3%;
 }
 
 .description p {
@@ -227,7 +234,7 @@ header span{
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	height: 100px;
+	height: 120px;
 	overflow: hidden;
 }
 
@@ -259,7 +266,7 @@ header span{
 /*Media queries*/
 
 /* OLD iPhone ---------------*/
-@media screen and (max-width: 667px){
+@media screen and (max-width: 750px){
 	.grid_1,
 	.grid_2,
 	.grid_3,
